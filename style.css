@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(29, 28, 28);
+    /* background-color: rgba(218, 228, 218, 0.164); */
+    font-family: sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:  rgba(188, 159, 228, 0.534);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://i.etsystatic.com/50696913/r/il/0b1fb4/5802047004/il_1140xN.5802047004_6ij0.jpg);
+    background-size: cover;
+    object-position: center;
+    background-repeat: no-repeat; 
+  
+}
+#container{
+    /* height: 500px; */
+    width: 800px;
+    border-top:1px solid rgb(255, 255, 255) ;
+    border-left: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgba(182, 167, 167, 0.123);
+    backdrop-filter: blur(40px);
+    border-radius: 20px ;
+     box-shadow: 10px 10px 40px black;
+     overflow: hidden;
+}
+
+
+#heading h1{
+    background-color: rgba(158, 109, 223, 0.753);
+    padding: 20px 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.514);
+}
+#enter-val{
+    height: 100px;
+    /* background-color: rgb(50, 54, 53); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+
+}
+#enter-val h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+#input{
+    background-color: transparent;
+    /* background-color: rgba(163, 98, 189, 0.199); */
+    font-size: 25px;
+    width: 130px;
+    outline: none;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 20px;
+    
+}
+
+#input:hover{
+     cursor: pointer;
+}
+p{
+    /* color: rgb(181, 188, 194); */
+    font-size: 30px;
+    /* background-color: rgb(177, 241, 241); */
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+    font-style:italic;  
+}
+
+#btn1{
+    background-color:rgba(158, 109, 223, 0.753) ;
+    padding: 8px 15px;
+    color: rgb(32, 32, 32);
+    border: 2px solid rgba(26, 26, 26, 0.712);
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family:Verdana;
+    outline: none;
+}
+#btn1:hover{
+    background-color:rgba(127, 66, 207, 0.849) ;
+     /* box-shadow: 0px 0px 10px rgba(127, 66, 207, 0.849); */
+     color: rgb(37, 37, 37);
+   
+}
+
+#converted-val{
+    height: 265px;
+    /* background-color: rgb(50, 54, 53); */
+    display: flex;
+    flex-direction: column;
+    
+}
+#upper{
+    /* height: 120px;
+    background-color: rgb(76, 199, 168); */
+    display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+#lower{
+    /* height: 120px;
+    background-color: rgb(76, 199, 168); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#div{
+    /* background-color: rgb(63, 63, 58); */
+    height: 133px;
+    width: 100%;
+    display: flex;
+     align-items: center;
+     justify-content: space-around;
+     border: 1px solid rgba(212, 208, 208, 0.116);
+     padding-right: 30px;
+}
+#div h4{
+    font-size: 25px;
+}
+#div h5{
+    font-size: 25px;
+}
+#div input{
+    width: 150px;
+}
+.celcius{
+    display: inline;
+}
+#celcius{
+    display: inline;
+}
+.celcius h5{
+    display: inline;
+}
+
+
+@media (max-width:600px) {
+    #container{
+        min-height: 60vh;
+        width: 80vw;
+        background-color: rgb(200, 189, 218);
+        
+        
+    }
+    #converted-val{
+        display: flex;
+        flex-direction: column;      
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        
+    }
+    #upper{
+        height: 45vw;
+         flex-direction: column;
+         
+    }
+    #lower{
+        height: 45vw;
+        flex-direction: column;
+    }
+    #enter-val{
+        height: 23vw ;  
+        margin-left: 5px;
+        margin-right: 10px;
+       
+    }
+    #enter-val h4{
+        font-size: 5.1vw;
+        font-weight: 700;
+        /* background-color: aqua; */
+    }
+    #div h4{
+        font-size: 5vw;
+    }
+    #div h5{
+        font-size: 6vw;
+        font-weight: 400;
+    }
+    #heading h1{
+
+        border-bottom: 1.8px solid rgba(39, 39, 39, 0.582);
+        font-size:6.9vw;
+        font-weight: 860;
+        margin: 0;
+        padding:20px 0px;
+    }
+    
+    /* #input{
+    font-size: 5vw;
+    width: 30vw;
+    padding: 1.5vw 2vw;
+    
+   } */
+    
+
+
+
+   #btn1{
+    font-size: 4vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .celcius{
+        display: none;
+    }
+    #celcius{
+        display: none;
+    }
+    .celciuss h5{
+        display: none;
+    }
+
+
+}
